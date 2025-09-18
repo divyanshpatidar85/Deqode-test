@@ -85,8 +85,8 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/LAVI9966/Decode_Task.git
-cd Decode_Task
+git clone https://github.com/divyanshpatidar85/Deqode-test.git
+cd Deqode_test
 ```
 
 ### 2. Authenticate with Azure
