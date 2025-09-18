@@ -1,0 +1,26 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and customize as needed
+
+# Basic Configuration
+resource_group_name = "nomad-cluster-rg"
+location           = "East US"
+environment        = "production"
+project           = "nomad-cluster"
+
+# VM Configuration
+vm_size        = "Standard_B2ms"   
+admin_username = "azureuser"
+
+# Cluster Sizing
+server_count = 1  
+client_count = 2   
+
+ssh_source_cidr      = "0.0.0.0/0"  
+nomad_ui_source_cidr = "0.0.0.0/0"   
+
+# SSH Key Path
+ssh_public_key_path = "C:\Users\divya\.ssh\id_rsa.pub"
+
+# Network Configuration
+vnet_address_space      = ["10.0.0.0/16"]
+subnet_address_prefixes = ["10.0.1.0/24"]
